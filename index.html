@@ -8,7 +8,7 @@
     <title>Document</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="moment-with-locales.js"></script>
-    <link rel="stylesheet" href="style.css">
+   
     
 </head>
 
@@ -18,17 +18,19 @@
         <div class="container">
             <h1 class="display-4">Work Day Schedule</h1>
             <p class="lead"></p>
+            
         </div>
     </div>
 
 
     <div class="input-group mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text">09:00 AM</span>
+            <span class="input-group-text" id="9AM">09:00 AM</span>
+            
         </div>
         <input type="text" class="form-control" id="form1">
         <div class="input-group-append">
-            <span class="btn btn-outline-secondary" type="button" id="saveButton1">Save</span>
+            <button class="btn btn-outline-secondary"  id="saveButton1">Save</button>
         </div>
     </div>
     <div class="input-group mb-3">
@@ -37,17 +39,20 @@
         </div>
         <input type="text" class="form-control">
         <div class="input-group-append">
-            <span class="btn btn-outline-secondary" type="button">Save</span>
+            <button class="btn btn-outline-secondary"  id="saveButton2">Save</button>
         </div>
     </div>
 
+    <p id="9AM"></p>
+
   
     
-    <script src="https://code.jquery.com/jquery-git.js"></script>
+    
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="./script.js"></script>
+        <link rel="stylesheet" href="style.css">
 </body>
 
 </html>
