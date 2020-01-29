@@ -2,10 +2,13 @@
 
 
 var nineAM = $('#lead');
-var nineAMM = moment().format();
+var nineAMM = moment().hour(Number);
 nineAM.textContent=nineAMM;
 console.log(nineAMM);
-
+ var currentDate = new Date()
+ console.log(currentDate)
+var momentDate = moment(currentDate).format("ddd, hA"); 
+console.log(momentDate) 
 
 
 
@@ -14,7 +17,7 @@ console.log(nineAMM);
 event =localStorage.getItem("event");
 
 console.log(event)
-$("#form1").text(event);
+$("#form1").val(event);
 
 
 
