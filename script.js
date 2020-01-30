@@ -155,73 +155,143 @@ if (momentDate < 9) {
 
     for (var i = 0; i <= inputform.length - 1; i++) {
 
-        inputform[i].css("background-color", "green");
+        inputform[i].css("background-color", "lightgreen");
 
     }
 }
-else if (momentDate = 9) {
+
+// At 9 AM
+
+switch (momentDate) {
+
+    case '9':
+
+        
+        inputform[0].css("background-color", "red");
+
+        for (var i = 1; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+
+    case '10':
+
+        inputform[0].css("background-color", "lightgray");
+        inputform[1].css("background-color", "red");
+
+        for (var i = 2; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+
+    case '11':
+
+        for (var i = 0; i < 2; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[2].css("background-color", "red");
+
+        for (var i = 3; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+
+    case '12':
+
+        for (var i = 0; i < 3; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[3].css("background-color", "red");
+
+        for (var i = 4; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+
+    case '13':
 
 
+        for (var i = 0; i < 4; i++) {
 
-    inputform[0].css("background-color", "red");
+            inputform[i].css("background-color", "lightgray");
+        }
 
-    for (var i = 1; i <= inputform.length - 1; i++) {
+        inputform[4].css("background-color", "red");
 
-        inputform[i].css("background-color","green");
+        for (var i = 5; i <= inputform.length - 1; i++) {
 
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+
+    case '14':
+
+        for (var i = 0; i < 5; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[5].css("background-color", "red");
+
+        for (var i = 6; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+        break;
+    case '15':
+
+        for (var i = 0; i < 6; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[6].css("background-color", "red");
+
+        for (var i = 7; i <= inputform.length - 1; i++) {
+
+            inputform[i].css("background-color", "lightgreen");
+        }
+
+        break;
+    case '16':
+
+        for (var i = 0; i < 7; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[7].css("background-color", "red");
+        inputform[8].css("background-color", "lightgreen");
+
+        break;
+
+    case '17':
+
+        for (var i = 0; i < 8; i++) {
+
+            inputform[i].css("background-color", "lightgray");
+        }
+
+        inputform[8].css("background-color", "red");
+
+         break;
+
+
+}
+// After 5 PM
+if (momentDate > 17) {
+
+    for (var i = 0; i <= inputform.length - 1; i++) {
+
+        inputform[i].css("background-color", "lightgray");
     }
-}
-else if (momentDate = 10) {
-
-    inputform[0].css("background-color", "gray");
-    inputform[1].css("background-color", "red");
-    
-    for (var i = 2; i <= inputform.length - 1; i++) {
-
-    inputform[i].css("background-color", "green");
-
-}
-}
-else if (momentDate = 11) {
-
-    inputform[1].css("background-color", "gray");
-    inputform[2].css("background-color", "red");
-
-}
-else if (momentDate = 12) {
-
-    inputform[2].css("background-color", "gray");
-    inputform[3].css("background-color", "red");
-}
-
-else if (momentDate = 13) {
-
-    inputform[3].css("background-color", "gray");
-    inputform[4].css("background-color", "red");
-}
-else if (momentDate = 14) {
-
-    inputform[4].css("background-color", "gray");
-    inputform[5].css("background-color", "red");
-}
-
-else if (momentDate = 15) {
-
-    inputform[5].css("background-color", "gray");
-    inputform[6].css("background-color", "red");
-}
-else if (momentDate = 16) {
-
-    inputform[6].css("background-color", "gray");
-    inputform[7].css("background-color", "red");
-}
-else if (momentDate = 17) {
-
-    inputform[7].css("background-color", "gray");
-    inputform[8].css("background-color", "red");
-}
-else if (momentDate > 17) {
-
-    inputform[8].css("background-color", "gray");
 
 }
