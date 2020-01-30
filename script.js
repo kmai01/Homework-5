@@ -1,4 +1,4 @@
-
+var timelabel=["9AM","10AM","11AM","12PM","1PM","2PM","3PM","4PM","5PM"]
 
 // loop create time slot with bootstrap class
 
@@ -14,6 +14,7 @@ inputgroupmb3Div.append(inputgroupprependDiv);
 
 var inputgrouppretextDiv= $("<span>")
 inputgrouppretextDiv.addClass("input-group-text")
+inputgrouppretextDiv.text(timelabel[i])
 inputgroupprependDiv.append(inputgrouppretextDiv);
 
 var inputform=$('<input />', {type:'text', class:'form-control'})
