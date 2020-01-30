@@ -1,7 +1,6 @@
 .container {
     text-align: center;
 }
-
-.lead{
-    background-color: white;
+.input-group-text{
+    width: 70px;
 }
