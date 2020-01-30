@@ -1,4 +1,4 @@
-// time label , input form , button in array
+// declare time label , input form , button in array
 
 var timelabel = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"]
 var inputform = [];
@@ -60,6 +60,7 @@ var event8 = localStorage.getItem("event8");
 inputform[8].val(event8);
 
 
+// Button function to save to localStorage
 
 savebutton[0].click(function () {
 
@@ -129,51 +130,98 @@ savebutton[8].click(function () {
 
     var content = inputform[8].val();
     localStorage.setItem("event8", content);
-    console.log(content);   
+    console.log(content);
 
 });
-
-
-
-
-
-
 
 
 var current = $("time");
 var time = moment().format('MMMM Do YYYY, h:mm:ss a');
 console.log(time)
-current.text(time);
-
-var eightAM = 8
 
 
-console.log(eightAM);
 
 
+// Get current date
 var currentDate = new Date()
 
+// Function convert hour to number
 var momentDate = moment(currentDate).format('H');
 console.log(momentDate)
 
+// Before 9 AM
+
+if (momentDate < 9) {
+
+    for (var i = 0; i <= inputform.length - 1; i++) {
+
+        inputform[i].css("background-color", "green");
+
+    }
+}
+else if (momentDate = 9) {
 
 
 
+    inputform[0].css("background-color", "red");
 
+    for (var i = 1; i <= inputform.length - 1; i++) {
 
+        inputform[i].css("background-color","green");
 
+    }
+}
+else if (momentDate = 10) {
 
+    inputform[0].css("background-color", "gray");
+    inputform[1].css("background-color", "red");
+    
+    for (var i = 2; i <= inputform.length - 1; i++) {
 
-
-
-
-
-
-if (eightAM < momentDate) {
-
-    $('#form1').css("background-color", "blue");
-
+    inputform[i].css("background-color", "green");
 
 }
+}
+else if (momentDate = 11) {
 
+    inputform[1].css("background-color", "gray");
+    inputform[2].css("background-color", "red");
 
+}
+else if (momentDate = 12) {
+
+    inputform[2].css("background-color", "gray");
+    inputform[3].css("background-color", "red");
+}
+
+else if (momentDate = 13) {
+
+    inputform[3].css("background-color", "gray");
+    inputform[4].css("background-color", "red");
+}
+else if (momentDate = 14) {
+
+    inputform[4].css("background-color", "gray");
+    inputform[5].css("background-color", "red");
+}
+
+else if (momentDate = 15) {
+
+    inputform[5].css("background-color", "gray");
+    inputform[6].css("background-color", "red");
+}
+else if (momentDate = 16) {
+
+    inputform[6].css("background-color", "gray");
+    inputform[7].css("background-color", "red");
+}
+else if (momentDate = 17) {
+
+    inputform[7].css("background-color", "gray");
+    inputform[8].css("background-color", "red");
+}
+else if (momentDate > 17) {
+
+    inputform[8].css("background-color", "gray");
+
+}
