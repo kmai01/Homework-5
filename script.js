@@ -1,13 +1,20 @@
 
 
 
-var nineAM = $('#lead');
-var nineAMM = moment().hour(Number);
-nineAM.textContent=nineAMM;
-console.log(nineAMM);
+var current= $("time");
+var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+console.log(time)
+current.text(time);
+
+var eightAM = 8
+
+
+console.log(eightAM);
+
+
  var currentDate = new Date()
- console.log(currentDate)
-var momentDate = moment(currentDate).format("ddd, hA"); 
+ 
+var momentDate = moment(currentDate).format('H'); 
 console.log(momentDate) 
 
 
@@ -42,6 +49,11 @@ function storeevent() {
 }
 
 
+if ( eightAM < momentDate ) {
 
+    $('#form1').css("background-color",  "blue");
+    
+
+}
  
 
