@@ -135,9 +135,13 @@ savebutton[8].click(function () {
 });
 
 
-var current = $("time");
+var current = $(".time");
 var time = moment().format('MMMM Do YYYY, h:mm:ss a');
-console.log(time)
+console.log(time);
+current.text(time);
+console.log(current)
+
+
 
 
 
